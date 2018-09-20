@@ -1,0 +1,21 @@
+<div style="border-style:solid;border-width: 1px ;border-color:black ;position: absolute;" [style.width.px]=this.jqxTreeObjectChild.width [style.marginLeft.px]=jqxTreeObjectChild.hPos  [style.marginTop.px]=jqxTreeObjectChild.vPos [style.height.px]=this.jqxTreeObjectChild.length>
+  <div style="margin-top: 2% ;font-weight: bold" [style.marginLeft.px]=leftLabel>
+    <label>{{jqxTreeObjectChild.name}}</label>
+  </div>
+  <div style="margin-left: 3%;margin-top: 1%">
+    <jqxExpander [width]=widthBorder [height]=this.jqxTreeObjectChild.length-60
+    [showArrow]="false" [toggleMode]="'none'">
+    <div>
+      Folders
+    </div>
+    <div style="overflow: hidden;">
+    <jqxTree #treeReference
+    [width]=widthBorder [height]=this.jqxTreeObjectChild.length [source]="treeSource">
+    </jqxTree>
+    </div>
+    </jqxExpander>
+  </div>
+  <br/> 
+</div>  
+  
+  

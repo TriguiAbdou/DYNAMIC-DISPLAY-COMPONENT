@@ -1,0 +1,15 @@
+<div style="border-style:solid;border-width: 1px ;border-color:black ;position: absolute;" [style.width.px]=this.jqxGridObjectChild.width [style.marginLeft.px]=jqxGridObjectChild.hPos  [style.marginTop.px]=jqxGridObjectChild.vPos>
+    <div style="margin-top: 2% ;font-weight: bold" [style.marginLeft.px]=leftLabel>
+        <label>{{jqxGridObjectChild.name}}</label>
+    </div>
+    <div style="margin-left: 1%;margin-top: 1%">
+        
+        <jqxGrid
+        [width]=widthBorder [source]="dataAdapter" [columns]="columns"
+            [pageable]="true" [autoheight]="true" [sortable]="true" 
+            [altrows]="true"  [enabletooltips]="true"  [editable]="true" 
+            [selectionmode]="'multiplecellsadvanced'" [columngroups]="columngroups">
+        </jqxGrid>
+        <br/>
+    </div>    
+</div>    

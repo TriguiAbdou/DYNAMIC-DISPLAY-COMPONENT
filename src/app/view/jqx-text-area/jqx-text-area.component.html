@@ -1,0 +1,10 @@
+<div style="border-style:solid;border-width: 1px ;border-color:black;position: absolute;" [style.width.px]=jqxTextAreaObjectChild.width [style.marginLeft.px]=jqxTextAreaObjectChild.hPos  [style.marginTop.px]=jqxTextAreaObjectChild.vPos [style.height.px]=jqxTextAreaObjectChild.length>
+    <div style="margin-top: 2% ;font-weight: bold" [style.marginLeft.px]=leftLabel>
+        <label >{{jqxTextAreaObjectChild.name}} </label>
+    </div>
+    <div style="margin-left: 2%;margin-top: 1%" > <jqxTextArea [width]=widthBorder [height]=lengthBorder [source]="generateSource"     
+        [minLength]="1" [placeHolder]="'Enter a sentence'">
+    </jqxTextArea>
+    </div>
+<br/>
+</div>  

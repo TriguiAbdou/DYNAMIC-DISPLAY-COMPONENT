@@ -1,0 +1,26 @@
+<!-- <div style="border-style:solid;border-width: 1px ;border-color:black ;width: 99%;margin-left: 0.5%;"> -->
+    <div style="margin-top: 1% ;margin-left: 48%;font-weight: bold;font-size: 110%">
+                <label>{{viewParent.viewName}}</label>
+    </div>
+    <div class="row">
+        <div *ngIf="jqxTextArea">
+            <app-jqx-text-area [jqxTextAreaObjectChild]=jqxTextAreaObject></app-jqx-text-area> 
+        </div> 
+        <div *ngIf="jqxChart">
+            <app-jqx-chart [jqxChartObjectChild]=jqxChartObject></app-jqx-chart>
+        </div >
+        <div *ngIf="jqxGrid">
+            <app-jqx-grid [jqxGridObjectChild]=jqxGridObject></app-jqx-grid>
+        </div>
+        <div *ngIf="jqxDataTable">
+            <app-jqx-data-table [jqxDataTableObjectChild]=jqxDataTableObject></app-jqx-data-table>
+        </div>
+        <div *ngIf="jqxTreeMap">
+            <app-jqx-tree-map [jqxTreeMapObjectChild]=jqxTreeMapObject></app-jqx-tree-map>
+        </div>
+        <div *ngIf="jqxTree">
+            <app-jqx-tree [jqxTreeObjectChild]=jqxTreeObject></app-jqx-tree>
+        </div>
+    </div>
+    <br/>
+<!-- </div> -->

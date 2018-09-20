@@ -1,0 +1,16 @@
+<div style="border-style:solid;border-width: 1px ;border-color:black;position: absolute; " [style.marginLeft.px]=jqxChartObjectChild.hPos  [style.marginTop.px]=jqxChartObjectChild.vPos [style.width.px]=jqxChartObjectChild.width [style.height.px]=jqxChartObjectChild.length>
+  <div style="margin-top: 2% ;margin-left: 41%;font-weight: bold" >
+    <label>{{jqxChartObjectChild.name}}</label>
+  </div>
+  <div style="margin-left: 2%;margin-top: 1%">  
+      <jqxChart #myChart
+    [width]=widthBorder [height]=lengthBorder
+    [title]="'Logarithmic Scale Axis Example'"
+    [description]="'Sample logarithmic scale axis with base 2'"
+    [enableAnimations]="true" [padding]="padding" 
+    [titlePadding]="titlePadding" [source]="sampleData" [xAxis]="xAxis"
+    [valueAxis]="valueAxis" [seriesGroups]="seriesGroups">
+  </jqxChart>
+  </div>
+  <br/>                                                                             
+</div>
