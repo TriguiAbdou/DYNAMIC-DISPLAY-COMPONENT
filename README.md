@@ -1,6 +1,11 @@
-# NiceProject
+# Dynamic Display Component Project
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.1.
+
+# Description
+
+We have visual components A, B, C, D, etc. Theses visual component can be any UI component in the jQWidgtes library like jqxGrid, jqXTextArea, or jqTreeGrid, jqScheduler, etc.
+There is a parent component which is just a blank canvas. We can call this as a ‘View’. And the smaller components A, B, C, etc. may be called Viewlets as shown in the picture below. So, the components A, B, C, etc are displayed on the view in any order or any layout. The View displays the Viewlets according to a given layout specified in a JSON data structure.
 
 ## Development server
 
